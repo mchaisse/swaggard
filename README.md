@@ -1,11 +1,13 @@
+[![Build Status](https://travis-ci.org/mchaisse/swaggard.svg)](https://travis-ci.org/mchaisse/swaggard)
+
 Swaggard
 ========
 
 Swaggard is a Rails Engine that can be used to document a REST api. It does this by generating a
 json that is compliant with [Swagger](http://swagger.io) and displaying it using [Swagger-ui](https://github.com/wordnik/swagger-ui).
-This gem is inspired and based on [SwaggerYard](https://github.com/synctv/swagger_yard) by [Chris Trinh](https://github.com/chtrinh). 
- 
- 
+This gem is inspired and based on [SwaggerYard](https://github.com/synctv/swagger_yard) by [Chris Trinh](https://github.com/chtrinh).
+
+
 Swaggard vs SwaggerYard
 -----------------------
 
@@ -22,7 +24,7 @@ And also:
 
 Installation
 ------------
-  
+
 Put Swaggard in your Gemfile:
 
     gem 'swaggard'
@@ -36,7 +38,7 @@ Getting Started
 -----------------
 
 Place your configuration in a your rails initializers
-    
+
     # config/initializers/swaggard.rb
 
     Swaggard.configure do |config|

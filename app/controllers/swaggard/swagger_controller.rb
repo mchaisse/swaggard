@@ -1,7 +1,6 @@
 module Swaggard
   class SwaggerController < ApplicationController
-
-    before_filter :authorize
+    before_action :authorize
 
     def index
       respond_to do |format|
