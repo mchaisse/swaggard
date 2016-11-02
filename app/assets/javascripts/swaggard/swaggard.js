@@ -11,7 +11,8 @@ $(function () {
   if (url && url.length > 1) {
     url = decodeURIComponent(url[1]);
   } else {
-    url = location.protocol + "//" + location.host + "/swagger.json";
+    var fileName = window.location.pathname.split('/')[1] + '.json';
+    url = location.protocol + '//' + location.host + '/' + fileName;
   }
   window.swaggerUi = new SwaggerUi({
     url: url,
